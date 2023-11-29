@@ -95,4 +95,6 @@
     margin-top: -6px;
   }
 
-  /*16:30*/
+  .weather{
+    display: none;
+  }
