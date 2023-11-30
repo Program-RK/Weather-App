@@ -44,8 +44,6 @@
             </div>
         </div>
     </div>
-
-
     <script>
 
         const apiKey = "b8eaeb2e2ad636a41d89014580626819";
@@ -64,8 +62,6 @@
 
             } else {
                 var data = await response.json();
-
-
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -95,18 +91,9 @@
             document.querySelector(".error").style.display = "none";
             }
         }
-
         searchBtn.addEventListener("click", ()=>{
             checkWeather(searchBox.value);
         })
-
-        
-
-
-        
-
     </script>
-
-
 </body>
 </html>
